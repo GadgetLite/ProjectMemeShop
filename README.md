@@ -6,7 +6,7 @@ Initial Project Start Date: 9/16/2026
 
 The Meme Shop is a shopping website to give users the ability to sell and buy memes with memecoins.
 
-      Development Tools 
+Development Tools: 
 Front-End: HTML, CSS, & Typescript
 Webserver & Back-End: C++ & cpp-httplib. 
 Collaboration: Jira, Github, & draw.io.
