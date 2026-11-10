@@ -1,6 +1,9 @@
-.PHONY: all lib exe wipe peek clean
+.PHONY: dirs all lib exe wipe peek clean
 
-all: lib exe
+all: dirs lib exe
+
+dirs:
+	mkdir -p exe lib database/data
 
 lib:
 	@echo Making Library:
