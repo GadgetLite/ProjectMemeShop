@@ -7,7 +7,7 @@
 int main() 
 {
 	httplib::Server svr;
-	svr.set_mount_point("/", "../www/");
+	svr.set_mount_point("/", "../../frontend/");
 	
 	httplib::Client cli("localhost", 8081);
 
