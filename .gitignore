@@ -1,3 +1,4 @@
+svrWeb
 *.o
 *.a
 .wrangler/

@@ -1,5 +1,5 @@
 CXX = g++
-CXXFLAGS = -g -std=c++17 -Iinclude -I../../../../include -pthread
+CXXFLAGS = -g -std=c++17 -Iinclude -I../../../include -pthread
 LIB = ../../lib/frontendUtilsLib.a
 SRCS = $(wildcard *.cpp)
 OBJS = $(SRCS:.cpp=.o)
