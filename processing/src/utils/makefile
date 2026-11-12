@@ -11,4 +11,4 @@ $(LIB): $(OBJS)
 	$(CXX) $(CXXFLAGS) -c $< -o $@
 
 clean:
-	rm -f $(OBJS) $(LIB)
+	$(RM) $(OBJS) $(LIB)
