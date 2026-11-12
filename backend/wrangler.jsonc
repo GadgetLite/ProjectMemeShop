@@ -1,0 +1,13 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "gadget-lite-api",
+  "main": "worker.js",
+  "compatibility_date": "2026-11-10",
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "gadget-lite-db",
+      "database_id": "450434bb-5993-4452-a72f-17b7bf4ac772"
+    }
+  ]
+}

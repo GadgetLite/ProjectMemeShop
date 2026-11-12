@@ -1,6 +1,7 @@
 .PHONY: all clean dirs
 CXX = g++
-CXXFLAGS = -g -std=c++17 -Iinclude -I../../../include -pthread
+CXXFLAGS = -g -std=c++17 -Iinclude -I../../../include -DCPPHTTPLIB_OPENSSL_SUPPORT 
+LDFLAGS = -lssl -lcrypto -lpthread
 TARGET = ../exe/svrWeb
 LIB = ../lib/frontendUtilsLib.a
 SRC = webServer.cpp
@@ -14,7 +15,7 @@ $(LIB):
 	make -C utils
 
 $(TARGET): $(LIB) $(SRC) 
-	$(CXX) $(CXXFLAGS) $(SRC) $(LIB) -o $@
+	$(CXX) $(CXXFLAGS) $(SRC) $(LIB) -o $@ $(LDFLAGS)
 
 clean:
 	${RM} $(TARGET)
