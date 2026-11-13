@@ -9,5 +9,11 @@
       "database_name": "gadget-lite-db",
       "database_id": "450434bb-5993-4452-a72f-17b7bf4ac772"
     }
+  ],
+  "r2_buckets": [
+	{
+		"binding": "BUCKET",
+		"bucket_name": "gadget-lite-bucket"
+	}
   ]
 }
