@@ -15,3 +15,25 @@ Webserver & Back-End: C++ & cpp-httplib.
 Collaboration: Jira, Github, & draw.io.
 
 <img width="631" height="218" alt="architechture_diagram drawio" src="https://github.com/user-attachments/assets/ad0cee1d-98e1-4740-9ae4-2cbaf6f23b45" />
+
+/ProjectMemeShop
+├── /backend
+│   ├── worker.js
+│   └── wrangler.jsonc         
+│
+├── /design
+│   ├── architecture-diagram.md
+│   ├── frontend-design.md
+│   └── processing-class-diagram.md  
+├── /frontend
+│   ├── index.html
+│   ├── loginPage.html
+│   └── signUpPage.html 
+├── /include
+│   ├── httplib.h
+│   └── validation.h
+├── /processing
+│   └── /makefile
+├── /.gitignore
+├── /makefile
+└── README.md
