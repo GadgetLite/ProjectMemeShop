@@ -38,7 +38,7 @@ Collaboration: Jira, Github, & draw.io.
 │   │   │   ├── webServer.cpp 
 │   │   ├── /utils
 │   │   │   ├── validation.cpp
-│   │   │   └── makefile 
+│   │   │   └── /makefile 
 │   └── /makefile
 ├── /.gitignore
 ├── /makefile
