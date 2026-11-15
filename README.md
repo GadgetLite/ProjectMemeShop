@@ -33,6 +33,12 @@ Collaboration: Jira, Github, & draw.io.
 │   ├── httplib.h
 │   └── validation.h
 ├── /processing
+│   ├── /src
+│   │   ├── /main
+│   │   │   ├── webServer.cpp 
+│   │   ├── /utils
+│   │   │   ├── validation.cpp
+│   │   │   └── makefile 
 │   └── /makefile
 ├── /.gitignore
 ├── /makefile
