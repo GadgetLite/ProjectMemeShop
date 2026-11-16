@@ -1,6 +1,8 @@
 /**
  * @file worker.js
  * @author Samuel Kalarash
+ * @author Hayden Botine
+ * @author Maya Anda
  * @date 11/13/2026
  * @brief Handles implementation of a Cloudflare Worker for interacting with D1 and R2 Databases.
  * @details This file implements posting SQL Statements to the Cloudflare D1 SQLite Database,
