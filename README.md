@@ -19,8 +19,8 @@ Collaboration: Jira, Github, & draw.io.
 ```text
 /ProjectMemeShop                            # Root Directory
 ├── /backend                                # Backend Tier with Cloudflare Worker and database communication configurations
-│   ├── worker.js                           # Cloudflare Worker Javascript logic for D1 (SQL) & R2 (No-SQL databases)
-│   └── wrangler.jsonc                      # Database communication configurations for Cloudflare's D1 (SQL) & R2 (No-SQL) databases
+│   ├── worker.js                           # Cloudflare Worker Javascript logic for D1 (SQL) & R2 (No-SQL) databases
+│   └── wrangler.jsonc                      # Database communication configurations for D1 & R2
 ├── /design                                 # Design Documents
 │   ├── architecture-diagram.md             # W.I.P (Do not grade, will include architecture diagram later)
 │   ├── frontend-design.md                  # All U.I. and frontend screenshots
