@@ -26,6 +26,7 @@ Collaboration: Jira, Github, & draw.io.
 │   ├── frontend-design.md                  # All U.I. and frontend screenshots
 │   └── processing-class-diagram.md         # W.I.P (Do not grade, will include class diagram later)
 ├── /frontend                               # Frontend Tier with all CSS, HTML, and Javascript files for frontend
+|   ├── cart.html                           # Cart page logic W.I.P
 │   ├── index.html                          # Home page logic W.I.P
 │   ├── loginPage.html                      # Login page logic W.I.P
 │   └── signUpPage.html                     # Sign Up page logic W.I.P
