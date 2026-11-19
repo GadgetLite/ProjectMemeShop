@@ -2,3 +2,5 @@ svrWeb
 *.o
 *.a
 .wrangler/
+*.log
+*.pid
