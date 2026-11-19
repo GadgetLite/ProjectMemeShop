@@ -23,6 +23,7 @@ Collaboration: Jira, Github, & draw.io.
 │   └── wrangler.jsonc                      # Database communication configurations for D1 & R2
 ├── /design                                 # Design Documents
 │   ├── architecture-diagram.md             # W.I.P (Do not grade, will include architecture diagram later)
+|   ├── database-tables.md                  # Screen shots of D1 database tables within Cloudflare dashboard
 │   ├── frontend-design.md                  # All U.I. and frontend screenshots
 │   └── processing-class-diagram.md         # W.I.P (Do not grade, will include class diagram later)
 ├── /frontend                               # Frontend Tier with all CSS, HTML, and Javascript files for frontend
