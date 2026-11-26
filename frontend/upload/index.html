@@ -1,0 +1,46 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MemeShop</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+
+  <body style="background-image:none;">
+
+    <!-- Navigation Bar -->
+    <div class="bar">
+      <a href="/"><h2 id="homepg-btn">Home</h2></a>
+      <h3>MemeShop</h3>
+      <nav>
+        <ul class="links">
+          <li><div class="accountIcon"></div>
+          <ul class="dropdown">
+            <li><a href="../cart"><h2 id="cartpg-btn">Cart</h2></a></li>
+            <li><a href="../login"id="loginpg-btn"><h2 >Login</h2></a></li>
+            <li><a href="../signUp"><h2 id="signuppg-btn">Sign Up</h2></a></li>
+          </ul></li>
+        </ul>
+      </nav>
+    </div>
+
+    <br><h1>Upload Meme</h1>
+    
+    <form class="up-form" id ="upload-form"> 
+      <label for="meme-img" id="drop-area">
+        <input type="file" accept="image/*" id="meme-img" style="display: none;" required>
+        <div id="img-view">
+            <img src="https://static.thenounproject.com/png/1034957-200.png">
+            <p>Drag and drop or click to upload</p>
+        </div>
+        </label> <br> <br>
+       <input type="text" id="title-input" placeholder="Enter title" required> <br> <br>
+      <input type="number" id="price-input" placeholder="Enter price" required> <br> <br>
+     <button type="submit" id="upload-btn">Upload</button>
+       <p id = "err" style="color: red;"></p>
+  </form>
+
+  </body>
+  <script src="../src/script.js" defer></script>
+</html>
