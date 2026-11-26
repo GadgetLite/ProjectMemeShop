@@ -1,0 +1,242 @@
+html {
+    background-color: rgb(15, 35, 89);
+}
+
+button {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    background-color: rgb(255, 194, 252);
+    margin: 0 auto;
+    margin-left: 10px;
+    padding: 8px 15px;
+    font-size: 17px;
+    color: maroon;
+    border-radius: 20px;
+    border: 3px solid rgb(255, 194, 252);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.218);
+    cursor: pointer;
+} 
+
+button:hover {
+    border: 3px solid rgb(211, 46, 211);
+}
+
+input {
+    all: unset;
+    background-color: rgb(255, 194, 252);;
+    backdrop-filter: blur(10px);
+    padding: 8px;
+    border: 4px solid rgb(255, 194, 252);;
+    border-radius: 20px;
+    width: 300px;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.218);
+    transition: border 0.3s ease;
+    justify-content: center;
+    align-items: center;
+}
+
+input:focus {
+    color: maroon;
+    border: 3px solid rgb(211, 46, 211);
+    background-color: rgb(255, 194, 252);
+}
+
+.dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 135px;
+    padding: 0;
+    list-style-type: none;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.482);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.218);
+    border-radius: 2px;
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.links {
+    list-style-type: none;
+}
+
+.links li {
+    position: relative;
+    border-radius: 2px;
+    transition: 0.3s ease;
+}
+
+.links li:hover {
+    background-color: rgba(245, 249, 246, 0.155);
+    cursor: pointer;
+}
+
+li:hover > .dropdown {
+    display: block;
+}
+
+.meme {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    min-width: 300px;
+    width: 300px;
+    border-radius: 10px;
+    background-color: greenyellow;
+    font-size: 35px;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.218); 
+}
+
+#meme-list {
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.meme:hover {
+    background-color: rgb(6, 99, 48);
+}
+
+.memePage {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+    height: 700px;
+    width: 1000px;
+    gap: 10px;
+    border-radius: 10px;
+    background-color: greenyellow;
+    font-size: 35px;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.218); 
+}
+
+.box {
+    border-radius: 20px;
+    flex-shrink: 0;
+    background-color: greenyellow;
+    min-height: 300px;
+    margin-left: 700px;
+    margin-right: 700px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.up-form {
+    flex-shrink: 0;
+    background-color: greenyellow;
+    min-height: 300px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;  
+}
+
+
+.bar {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.627);
+    flex-grow: 1;
+    margin: 0;
+    gap: 20px;
+    min-height: 15px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accountIcon {
+    height: 40px;
+    width: 40px;
+    margin-left: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 20px;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.background {
+    background-image: url(https://www.publicdomainpictures.net/pictures/810000/velka/cosmic-nebula-background-1783581031bGR.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    height: 250px;
+}
+
+
+body {
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    font-size: 70px;
+    color: rgb(255, 255, 255);
+}
+
+h2 {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 25px;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    color: rgb(255, 255, 255);
+    justify-content: center;
+    align-items: center;
+}
+
+h3 {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 35px;
+    margin-left: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 20px;
+    color: rgb(255, 255, 255);
+    justify-content: center;
+    align-items: center;
+}
+
+#drop-area {
+    width: 500px;
+    height: 300px;
+    padding: 30px;
+    margin-left: 50px;
+    background-color: aqua;
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#img-view {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    border: 2px dashed grey;
+    background-color: white;
+    background-size: cover;
+}
+
+#img-view img {
+    width: 100px;
+    margin-top: 25px;
+}
