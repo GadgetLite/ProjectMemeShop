@@ -1,51 +1,39 @@
 <!DOCTYPE html>
+
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="src/script.js" defer></script>
     <title>MemeShop</title>
-    <style>
-      body{
-        background-color: greenyellow;
-      }
-      h1 {
-        text-align: center;
-        font-size: 70px;
-      }
-      #list {
-        list-style: none;
-        padding: 0;
-      }
-      button {
-        background-color: lightskyblue;
-        margin: 0 auto;
-        padding: 5px 10px;
-        font-size: 16px;
-        color: black;
-        border-radius: 5px;
-        cursor: pointer;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    
-    <a href="signUp">
-        <button id="signuppg-btn" style="float: right;">Sign Up</button>
-      </a>
-    <a href="login">
-    <button id="loginpg-btn" style="float: right;">Login</button>
-    </a> <br>
-    
-    <a href="/">
-    <h1>MemeShop</h1>
-    </a>
-    <ul id="list"></ul>
 
-    <a href="cart">
-    <button id="cartpg-btn" style="float: right;">Cart</button>
-    </a>
+  <body>
+
+    <div class="background"> 
+    <!-- Navigation Bar -->
+    <div class="bar">
+      <a href="/"><h2 id="homepg-btn">Home</h2></a>
+      <nav>
+        
+        <ul class="links">
+          <li><button class="accountIcon" style="display: block;"></button>
+          <ul class="dropdown">
+            <li><a href="cart"><h2 id="cartpg-btn">Cart</h2></a></li>
+            <li><a href="login"id="loginpg-btn"><h2 >Login</h2></a></li>
+            <li><a href="signUp"><h2 id="signuppg-btn">Sign Up</h2></a></li>
+            <li><a href="upload"><h2 id="uploadpg-btn">Upload</h2></a></li>
+          </ul></li>
+        </ul>
+      </nav>
+    </div>
+    <a href="/"><h1 id="home-txt">MemeShop</h1></a><br> <br> <br> <br>
+    </div>
     
+    <!-- Meme Grid -->
+    <a href="meme"><div id="meme-list"></div></a> <br> <br> <br> <br>
+
   </body>
+  <script src="src/script.js" defer></script>
 </html>
