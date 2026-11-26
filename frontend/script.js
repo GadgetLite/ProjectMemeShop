@@ -234,7 +234,7 @@ if (signupForm) {
             }
 
             localStorage.setItem("token", data.token);
-            window.location.href = "../login";
+            window.location.href = "/login";
         } catch (err) {
             errorEl.textContent = "Could not reach the server";
             console.error(err);
