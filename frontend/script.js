@@ -197,7 +197,8 @@ if (signupForm) {
 
         console.log("form exists");
 
-        const email = document.getElementById("email-input").value.trim();
+        const firstName = document.getElementById("first-name-input").value.trim();
+        const lastName = document.getElementById("last-name-input").value.trim();
         const username = document.getElementById("username-input").value.trim();
         const password = document.getElementById("password-input").value;
         const passwordRe = document.getElementById("password-re-input").value;
@@ -213,7 +214,7 @@ if (signupForm) {
             const response = await fetch("http://localhost:8080/api/signup", {
                 method: "POST",
                 headers: {"Content-Type": "application/json"},
-                body: JSON.stringify({email, username, password})
+                body: JSON.stringify({firstName, lastName, username, password})
             });
             
             console.log(response.status, response.url);
