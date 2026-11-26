@@ -1,47 +1,36 @@
 <!DOCTYPE html>
+
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MemeShop</title>
-    <style>
-      body{
-        background-color: greenyellow;
-      }
-      h1 {
-        text-align: center;
-        font-size: 70px;
-      }
-      h2{
-        text-align: center;
-        padding: 0;
-    }
-    button {
-        background-color: lightskyblue;
-        margin: 0 auto;
-        padding: 5px 10px;
-        font-size: 30px;
-        color: black;
-        border-radius: 5px;
-        cursor: pointer;
-      }
-    </style>
+    <link rel="stylesheet" href="../style.css" />
   </head>
-  <body>
-    <br><a href="/">
-    <h1>MemeShop</h1>
-    </a>
-    <ul id="list"></ul>
-    <form id ="new-task-form">
-      <input type="emailInput" id="text-input" float="center" placeholder="Enter Email" />
-      <input type="usernameInput" id="text-input" float="center" placeholder="Enter Username"/>
-      <input type="passwordInput" id="text-input" float="center" placeholder="Enter Password" />
-      <input type="passwordInput" id="text-input" float="center" placeholder="Confirm Password" />
-    </form>
-    <button id="signuppg-btn">Sign Up</button>
-      <a href="../login">
-        <button id="login-btn">Login</button>
-      </a>
+
+  <body style="background-image:none;">
+    <!-- Navigation Bar -->
+    <div class="bar">
+      <a href="/"><h2 id="homepg-btn">Home</h2></a>
+      <h3>MemeShop</h3>
+      <h2 style="color: rgba(255, 255, 255, 0);">Sign Up</h2>
+    </div>
+
+    <br><h1>Sign Up</h1>
+
+    <div class="box">
+      <form id ="signup-form"> <br>
+        <input type="email" id="email-input" float="center" placeholder="Enter Email" required> <br> <br>
+        <input type="username" id="username-input" float="center" placeholder="Enter Username" required> <br> <br>
+        <input type="password" id="password-input" float="center" placeholder="Enter Password" required> <br> <br>
+        <input type="password" id="password-re-input" float="center" placeholder="Confirm Password" required> <br> <br>
+        <button type="submit" id="signupSub-btn">Sign Up</button> 
+        <p id = "err" style="color: red;"></p> 
+      </form>
+      <a href="../login"><button id="loginpg-btn">Login</button></a> <br> 
+    </div>
+
   </body>
+  <script src="../src/script.js" defer></script>
 </html>
