@@ -93,6 +93,12 @@ li:hover > .dropdown {
     box-shadow: 0 5px 12px rgba(0, 0, 0, 0.218); 
 }
 
+.meme img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 #meme-list {
     margin-top: 100px;
     display: flex;
@@ -159,6 +165,30 @@ li:hover > .dropdown {
     min-height: 15px;
     justify-content: space-between;
     align-items: center;
+}
+
+.guest-bar {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.627);
+    flex-grow: 1;
+    margin: 0;
+    gap: 20px;
+    min-height: 15px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.logged-bar {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.627);
+    flex-grow: 1;
+    margin: 0;
+    gap: 20px;
+    min-height: 15px;
+    justify-content: space-between;
+    align-items: center;
+    display: none;
 }
 
 .accountIcon {
