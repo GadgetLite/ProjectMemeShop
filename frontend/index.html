@@ -12,11 +12,10 @@
   <body>
 
     <div class="background"> 
-    <!-- Navigation Bar -->
-    <div class="bar">
+    <!-- Guest Navigation Bar -->
+    <div class="guest-bar">
       <a href="/"><h2 id="homepg-btn">Home</h2></a>
       <nav>
-        
         <ul class="links">
           <li><button class="accountIcon" style="display: block;"></button>
           <ul class="dropdown">
@@ -28,6 +27,24 @@
         </ul>
       </nav>
     </div>
+
+
+    <!-- Logged In Navigation Bar -->
+    <div class="logged-bar">
+      <a href="/"><h2 id="homepg-btn">Home</h2></a>
+      <nav>
+        <ul class="links">
+          <li><button class="accountIcon" style="display: block;"></button>
+          <ul class="dropdown">
+            <li><a href="cart"><h2 id="cartpg-btn">Cart</h2></a></li>
+            <li><a href="upload"><h2 id="uploadpg-btn">Upload</h2></a></li>
+            <li><h2>Log Out</h2></li>
+          </ul></li>
+        </ul>
+      </nav>
+    </div>
+
+
     <a href="/"><h1 id="home-txt">MemeShop</h1></a><br> <br> <br> <br>
     </div>
     
@@ -35,5 +52,5 @@
     <a href="meme"><div id="meme-list"></div></a> <br> <br> <br> <br>
 
   </body>
-  <script src="script.js" defer></script>
+  <script src="/script.js" defer></script>
 </html>
