@@ -128,10 +128,10 @@ if (uploadForm) {
        
         const data = await response1.json().catch(() => ({}));
 
-        /*if(!response1.ok) {
+        if(!response1.ok) {
             errorEl.textContent = data.message || "Upload failed";
             return;
-        }*/
+        }
 
         console.log("image good");
 
@@ -160,10 +160,10 @@ if (uploadForm) {
             console.error("Not valid JSON:", text);
         }
 
-        /*if(!response2.ok) {
+        if(!response2.ok) {
             errorEl.textContent = data.message || "Upload failed";
             return;
-        }*/
+        }
 
         localStorage.setItem("text", title);
         const id = new URLSearchParams(window.location.search).get("id");
@@ -217,10 +217,10 @@ if (loginForm) {
             console.log("form exists");
             
 
-            /*if(!response.ok) {
+            if(!response.ok) {
                 errorEl.textContent = data.message || "Login failed";
                 return;
-            }*/
+            }
 
             barAppearance();
             localStorage.setItem("token", data.token);
@@ -273,10 +273,10 @@ if (signupForm) {
                 console.error("Not valid JSON:", text);
             }
 
-            /*if(!response.ok) {
+            if(!response.ok) {
                 errorEl.textContent = data.message || "Sign up failed";
                 return;
-            }*/
+            }
 
             localStorage.setItem("token", data.token);
             window.location.href = "/login";
