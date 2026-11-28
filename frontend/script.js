@@ -106,9 +106,9 @@ if (uploadForm) {
         const memeImg = document.getElementById("meme-img").files[0];
         const title = document.getElementById("title-input").value.trim();
         const price = document.getElementById("price-input");
+        const desc = document.getElementById("desc-input");
+        const imgName = memeImg.name;
         const errorEl = document.getElementById("err");
-
-
         errorEl.textContent = "";
 
         if (!memeImg) {
@@ -116,7 +116,7 @@ if (uploadForm) {
         }
 
         try {
-            const response1 = await fetch("/api/upload", {
+            const response1 = await fetch("/api/upload/file", {
                 method: "POST",
                 headers: {"Content-Type": memeImg.type},
                 body: memeImg
@@ -142,10 +142,10 @@ if (uploadForm) {
 
 
         try {
-            const response2 = await fetch("/api/upload", {
+            const response2 = await fetch("/api/upload/meme", {
                 method: "POST",
                 headers: {"Content-Type": "application/json"},
-                body: JSON.stringify({title, price})
+                body: JSON.stringify({title, desc, price, imgName})
         });
 
         console.log(response2.status, response2.url);
